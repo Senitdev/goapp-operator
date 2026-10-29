@@ -1,0 +1,10 @@
+
+apiVersion: apps.senit.dev/v1alpha1
+kind: GoApp
+metadata:
+  name: demo-nginx
+  namespace: default
+spec:
+  replicas: 3
+  image: k8s-backend-demo:v1
+  port: 8086
